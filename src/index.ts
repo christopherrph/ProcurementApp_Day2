@@ -18,10 +18,10 @@ const app: Application = express();
 // use middleware
 app.use(helmet());
 app.use(express.json());
-app.use(morgan("combined", {
-  stream: fs.createWriteStream(path.join(__dirname, "access.log")),
-})
-);
+// app.use(morgan("combined", {
+//   stream: fs.createWriteStream(path.join(__dirname, "access.log")),
+// })
+// );
 
 
 // error handling

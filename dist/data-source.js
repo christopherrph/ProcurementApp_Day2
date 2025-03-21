@@ -12,6 +12,6 @@ exports.purwadhikaDB = new typeorm_1.DataSource({
     url: config_1.SUPABASE_URL || "",
     synchronize: false,
     logging: false,
-    entities: [path_1.default.join(__dirname, "/entities/*.ts")],
-    migrations: [path_1.default.join(__dirname, "/migrations/*.ts")]
+    entities: [path_1.default.join(__dirname, "/entities/*.{ts,js}")],
+    migrations: [path_1.default.join(__dirname, "/migrations/*.{ts,js}")]
 });

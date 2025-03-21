@@ -7,6 +7,6 @@ export const purwadhikaDB = new DataSource({
     url: SUPABASE_URL || "",
     synchronize: false,
     logging: false,
-    entities: [path.join(__dirname,"/entities/*.ts")],
-    migrations: [path.join(__dirname,"/migrations/*.ts")]
+    entities: [path.join(__dirname,"/entities/*.{ts,js}")],
+    migrations: [path.join(__dirname,"/migrations/*.{ts,js}")]
 });
